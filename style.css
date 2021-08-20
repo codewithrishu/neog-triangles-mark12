@@ -1,0 +1,111 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.my_nav{
+    margin: auto;
+    background-color: #F59E0B;
+
+}
+
+.my_nav ul{
+    list-style-type: none;
+    text-align: right;
+    padding-right: 35px;
+    padding-bottom: 1rem;
+   
+}
+ li{
+    display: inline;
+    color: #FFFBEB;
+    font-size: 1rem;
+
+}
+.my_nav{
+    padding-top: 20px;
+     margin: auto;
+}
+.my_nav .my_logo{
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    color: #FEF3C7;
+}
+ li a{
+    text-decoration: none;
+    padding: 1rem .5rem;
+    color: var(--secondary-color);
+   
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+h1{
+    padding: 1rem;
+    color: #92400E;
+    text-align: center;
+}
+label{
+   
+    font-size: 1.5rem;
+    text-align: center;
+    color: #B45309;
+}
+input{
+    display: block;
+    padding: 1rem 1.5rem;
+    border: none;
+    box-shadow: 1px 2px 1px 2px #FDE68A;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+
+}
+button{
+    padding: 1rem 1rem;
+    background-color: #92400E;
+    color:#FEF3C7 ;
+    border-radius: 2rem;
+    border: none;
+}
+button:hover{
+    background-color: #78350F;
+    cursor: pointer;
+}
+#output-box{
+    font-size: 1rem;
+    padding: 1.5rem
+}
+
+footer{
+    padding-top:1rem;
+     text-align: center;
+     margin: auto;
+}
+footer li a{
+     color: #F59E0B;
+}
+footer ul{
+    padding: 0;
+    
+}
+h4{
+    padding-top: 1rem;
+    color: #92400E
+}
+
+.form-option{
+    display: inline;
+     box-shadow:none;
+     margin-left: 1.5rem;
+     
+}
+.form-container{
+    text-align: left
+}

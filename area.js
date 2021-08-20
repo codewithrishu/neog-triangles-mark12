@@ -2,7 +2,7 @@
 
 var inputs = document.querySelectorAll('#inputs')
 
-var isTriangle = document.querySelector('#is-triangle')
+var calArea = document.querySelector('#calculate')
 var outputBox = document.querySelector('#output-box')
 
 
@@ -18,34 +18,32 @@ function checkValid() {
         outputBox.innerText = "please fill all the fields"
     }
     else{
-        checkTriangle()
+         calAreaOf()
     }
   
     
 }
 
-function calulateSum(values) {
-    var add=0
+function calulateProduct(values) {
+    var add=1
     for(var i=0;i<values.length;i++){
-        add = add + Number(values[i].value)
+        add = add * Number(values[i].value)
         
     }
     return add;
 }
 
 
-function checkTriangle() {
+function calAreaOf() {
 
-    var sum = calulateSum(inputs)
-    if(sum === 180){
-        outputBox.innerText = "Yay, the angles form a triangle!";
-    }
-    else{
-        outputBox.innerText = "Oh Oh! The angle doesn't form a triangle";
-    }
+    var product = calulateProduct(inputs)
+    var result = product / 2
+    
+        outputBox.innerText = "are of the triangle is "+ result;
+  
 }
 
 
 
 
-isTriangle.addEventListener('click',checkValid)
+calArea.addEventListener('click',checkValid)
