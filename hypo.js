@@ -7,13 +7,13 @@ var hypoOutputBox = document.querySelector('#output-box')
 function checkValid() {
     var flag =0;
     for(var i=0;i<inputs.length;i++){
-        if(inputs[i].value === ""){
+        if(inputs[i].value === "" || inputs[i].value <= 0){
             flag = 1;
             break;
         }
     }
     if((flag === 1)){
-        hypoOutputBox.innerText = "please fill all the fields"
+        hypoOutputBox.innerText = "please check the fields again"
     }
     else{
          calulateHyptenuse()
